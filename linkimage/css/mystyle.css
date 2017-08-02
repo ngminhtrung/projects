@@ -1,0 +1,72 @@
+body {
+		background-color: #fbfbfc;
+		vertical-align: middle;
+		width: 50%;
+		margin: auto;
+	}
+
+
+p {
+    color: #008CBA;;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+h1 {
+
+	color: rgb(00, 00, 00);
+	text-align: center;
+	background-color: yellow;
+}
+
+	.header {
+
+		text-align: center;
+	}
+
+	p.filling_form {
+
+		text-indent: 50px;
+	}
+	
+	p.sub-content::first-letter {
+		color: #FF0000;
+		font-size: xx-large;
+	}
+
+	a:link {
+    	color: #FF0000;
+	}
+
+	/* visited link */
+	a:visited {
+    	color: #d16283;
+	}
+
+	/* mouse over link */
+	a:hover {
+    	color: #FF00FF;
+	}
+
+	/* selected link */
+	a:active {
+    	color: #b04ce8;
+	}
+
+.illustration {
+	text-align: center;
+	margin: 0 auto;
+}
+
+img.product {
+	max-width: 50%;
+}
+
+img.thumbnail {
+	height: 100px;
+	width: 100px;
+}
+
+#logo {
+	max-width: 30%;
+}
