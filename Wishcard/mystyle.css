@@ -1,50 +1,69 @@
 body {
 	height: 100%;
 	margin: 0;
+	background-color: black;
 }
 
 .wrap {
 
-	height: 100%;
 	margin-top: 200px; 
-	background-color: black;
 	margin: auto;
 	padding: 0;
-	margin-top: 0;
+	margin-top: 5%;
+
+}
+
+.frame {
+	width: 70%;
+	margin: auto;
+	border-style: double;
+	border-color: white;
+	border-width: 5px;
+
 }
 
 .text {
-	width: 70%;
-	margin: auto;
-	padding-top: 20px;
+	animation: collap;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 15s;
+	animation-fill-mode: forwards;
+
 }
 
+@keyframes collap {
+	from {opacity: 1}
+	to {opacity: 0; height: 0;}
+}
 
 h1, h2 {
 
 	color: white;
 	font-size: 36px;
 	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
 
 }
 
 img {
 
 	display: block;
-	width: 70%;
+	width: 100%;
 	opacity: 0.0;
 	margin: auto;
 	animation-name: thank_you;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation-iteration-count: 1;
     animation-direction: 1;
     animation-fill-mode: forwards;
+    padding-bottom: 10px;
 }
 
 
-.text-one {
+#one {
 	
 	display:inline;
     animation:fade-in 3s ease-in-out;
@@ -52,7 +71,8 @@ img {
 
 
 }
-.text-two{
+
+#two{
 	
 	opacity:0;
 	display:inline;
@@ -62,7 +82,7 @@ img {
 
 }
 
-.text-three{
+#three{
 	
 	opacity:0;
 	display:inline;
@@ -72,7 +92,7 @@ img {
 
 }
 
-.text-four{
+#four{
 	
 	opacity:0;
 	display:inline;
