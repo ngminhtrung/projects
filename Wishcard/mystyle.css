@@ -1,0 +1,141 @@
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.wrap {
+
+	height: 100%;
+	margin-top: 200px; 
+	background-color: black;
+	margin: auto;
+	padding: 0;
+	margin-top: 0;
+}
+
+.text {
+	width: 70%;
+	margin: auto;
+	padding-top: 20px;
+}
+
+
+h1, h2 {
+
+	color: white;
+	font-size: 36px;
+	text-align: center;
+
+}
+
+img {
+
+	display: block;
+	width: 70%;
+	opacity: 0.0;
+	margin: auto;
+	animation-name: thank_you;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.text-one {
+	
+	display:inline;
+    animation:fade-in 3s ease-in-out;
+    animation-fill-mode: forwards;
+
+
+}
+.text-two{
+	
+	opacity:0;
+	display:inline;
+	animation:fade-in 4s ease-in-out;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+
+}
+
+.text-three{
+	
+	opacity:0;
+	display:inline;
+	animation:fade-in 3s ease-in-out;
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+
+}
+
+.text-four{
+	
+	opacity:0;
+	display:inline;
+	animation:fade-in 4s ease-in-out;
+	animation-delay: 10s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes fade-in
+
+{	
+	from { opacity:0; }	
+	to { opacity:1; }
+}
+
+@keyframes thank_you {
+
+	from {
+    	transform:scale(0.5,0.5);
+    	opacity: 0.0;
+
+		}
+		
+	
+	to {
+    	transform:scale(1,1);
+    	opacity: 1.0;
+	}
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
