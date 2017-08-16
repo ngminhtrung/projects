@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+
+
+		<script src="quiz.js"></script>
+		
+		<script type="text/javascript">
+				
+				const pageNumber = 6;
+
+		</script>
+
+
+
+
+  <style type="text/css">
+
+
+	  .well {
+	  	height: 500px;
+	  	background-color: white;
+	  	text-align: center;
+	  }
+
+  </style>
+
+
+
+  <script type="text/javascript">
+
+  		
+  		function congrats() {
+
+	  		if ( sessionStorage["rightAnswerNumber"] > 3) {
+
+	  			document.getElementById("announcement").innerHTML = "Congratulations!";
+	  			document.getElementById("details").childNodes[0].textContent = "You have successfully completed ";
+	  			document.getElementById("details").childNodes[1].textContent = sessionStorage["rightAnswerNumber"];
+	  			document.getElementById("details").childNodes[2].textContent = " questions.";
+	  			document.getElementById("question-image").src = "victory.png";
+	  		
+	  			
+	  		} else {
+
+
+	  			document.getElementById("announcement").innerHTML = "Sorry!";
+	  			document.getElementById("details").childNodes[0].textContent = "You have only completed ";
+	  			document.getElementById("details").childNodes[1].textContent = sessionStorage["rightAnswerNumber"];
+	  			document.getElementById("details").childNodes[2].textContent = " question(s).";
+
+	  		}
+  		}
+
+  </script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="fireworks.css"> -->
+
+</head>
+
+
+<body onload="congrats()">
+
+<div class="container">
+
+
+	<img src="quiz.jpg" class="img-responsive center-block" alt="Cinque Terre" >
+
+	<div id="header">European must-see places</div><br>
+
+	<div class="progress">
+  		<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  		aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    	100% Complete
+  		</div>
+	</div>
+
+	<div class="box">
+		
+		<div id="question" class="well"> 
+
+				<h2 id="announcement" class="text-center text-success">Congratulations </h2>
+				<h4 id="details" class="text-center text-muted"> <mark><span class="lead text-success"></span></mark> questions.</h4>
+				<!-- Fireworks CSS ONLY -->
+
+				<div class="pyro">
+				    <div class="before"></div>
+				    <div class="after"></div>
+				</div>
+
+				<!-- Fireworks CSS ONLY -->
+				<br>
+				<img src="" class="img-rounded img-responsive center-block" id="question-image">
+
+				<button type="button" class="btn btn-success" onclick="location.href='quiz0.html'">Play again?</button>
+
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+</div>
+
+</body>
+</html>
