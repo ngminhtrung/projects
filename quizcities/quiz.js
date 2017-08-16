@@ -112,7 +112,7 @@ function setData(n) {
 
 		document.getElementById("question-image").src = "photo0" + n + ".jpg"
 
-		document.getElementById("header").innerHTML = "European must-see places" 
+		document.getElementById("header").innerHTML = "<span class='red'>European </span><span class='blue'>must-see </span><span class='orange'>places </span>" 
 
 	
 }
