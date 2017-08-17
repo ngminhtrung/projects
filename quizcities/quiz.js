@@ -89,11 +89,11 @@ let questionData = [
 
 ]
 
-// let rightAnswerNumber = 0;
+let pageNumber = 1;
 
-function setData(n) {
+function setData() {
 
-		document.getElementById("question").innerHTML = questionData[n-1].question;
+		document.getElementById("question").innerHTML = questionData[pageNumber-1].question;
 		
 		let labelText = document.getElementsByClassName("radio-label");
 		let inputValue = document.getElementsByName("optradio");
@@ -101,23 +101,39 @@ function setData(n) {
 		
 		for (i=0; i<4; i++) {
 
-			labelText[i].childNodes[1].data = questionData[n-1].answer[i];
-			inputValue[i].value = questionData[n-1].answer[i];
+			labelText[i].childNodes[1].data = questionData[pageNumber-1].answer[i];
+			inputValue[i].value = questionData[pageNumber-1].answer[i];
+			inputValue[i].disabled = false;
+			inputValue[i].checked = false;
 
 		}
 
-		barProgress[0].attributes[2].value = n * 20; 
-		barProgress[0].attributes[5].value = "width:" + (n * 20) + "%";
-		barProgress[0].childNodes[0].nodeValue = (n * 20) + "%";
+		barProgress[0].attributes[2].value = pageNumber * 20; 
+		barProgress[0].attributes[5].value = "width:" + (pageNumber * 20) + "%";
+		barProgress[0].childNodes[0].nodeValue = (pageNumber * 20) + "%";
 
-		document.getElementById("question-image").src = "photo0" + n + ".jpg"
+		document.getElementById("question-image").src = "photo0" + pageNumber + ".jpg"
 
-		document.getElementById("header").innerHTML = "<span class='red'>European </span><span class='blue'>must-see </span><span class='orange'>places </span>" 
+		document.getElementById("header").innerHTML = "<span class='red'>European </span><span class='blue'>must-see </span><span class='orange'>places </span>" ;
+		document.getElementById("submit-btn").disabled = false;
 
 	
 }
 
-function submit(element,n) {
+function increasePageNumber() {
+	pageNumber += 1;
+
+	if (pageNumber == 6) {
+
+		window.location.href="quiz2.html";
+	} else 
+	{
+		setData();	
+	}
+
+}
+
+function submit(element) {
 
 	let inputValue = document.getElementsByName("optradio");
 
@@ -125,7 +141,7 @@ function submit(element,n) {
 
 			if (inputValue[i].checked == true) {
 
-				if (inputValue[i].value == questionData[n-1].correct_answer) {
+				if (inputValue[i].value == questionData[pageNumber-1].correct_answer) {
 					
 					sessionStorage["rightAnswerNumber"] = Number(sessionStorage["rightAnswerNumber"]) + 1;
 
@@ -144,7 +160,7 @@ function submit(element,n) {
 
 	document.getElementById("submit-btn").disabled = true;
 
-	document.getElementById("explanation").innerHTML = questionData[n-1].explanation;
+	document.getElementById("explanation").innerHTML = questionData[pageNumber-1].explanation;
 
 }
 
