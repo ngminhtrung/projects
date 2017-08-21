@@ -18,9 +18,11 @@ CSS:
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="flat-style.css" id="stylecss">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"></link>
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/220b50267c.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		
 </head>
@@ -35,6 +37,8 @@ CSS:
 
 					<h1> Simple Scientific calculator</h1>
 					<h2> Nguyen Minh Trung @ TechMaster Vietnam </h2>
+					<button id = "btn-change"> Change theme </button>
+
 			</div>
 
 			<div class="calculator" id ="calculator_wrapper">
@@ -54,7 +58,7 @@ CSS:
 	    					<a href="#"><i>clear history</i></a>
 	    					<ul>
 	    						<li class="history_row">
-	    							<p onclick ="thuxem()" class="l"> </p>
+	    							<p class="l"> </p>
 	    							<p class="r"> </p>
 	    						</li>
 	    						<li class="history_row">
@@ -161,7 +165,23 @@ CSS:
 
 	</div>
 
-	<script src="calculator.js"></script>
+	<script src="calculator.js"> </script>
+
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+		    $("#btn-change").click(function(){
+
+
+		       if ($("#stylecss").attr("href") == "flat-style.css") { $("#stylecss").attr("href","classic-style.css");}
+		       else {$("#stylecss").attr("href","flat-style.css")}
+		    });
+
+		});
+
+	</script>
+
+
 
 </body>
 </html>
