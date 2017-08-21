@@ -22,19 +22,19 @@ function myFunctionExt() {
 			
 	if (isClickButtonExtend == true) {
 
-		document.getElementById("slide_wrapper").style.width = "235px";
-		document.getElementById("RadDeg").style.width = "235px";
-		document.getElementById("advanced_others").style.width = "235px";
-		document.getElementById("calculator_wrapper").style.width = "555px";
-		document.getElementById("Extend").innerHTML = 'collapse ... <i class="fa fa-arrow-right" aria-hidden="true"></i> ';
+		$("#slide_wrapper").width(235);
+		$("#RadDeg").width(235p);
+		$("#advanced_others").width(235p);
+		$("#calculator_wrapper").width(555);
+		$("#Extend").html = 'collapse ... <i class="fa fa-arrow-right" aria-hidden="true"></i> ';
 
 	} else {
 
-		document.getElementById("slide_wrapper").style.width = 0;
-		document.getElementById("RadDeg").style.width = 0;
-		document.getElementById("advanced_others").style.width = 0;
-		document.getElementById("calculator_wrapper").style.width = "315px";
-		document.getElementById("Extend").innerHTML = '<i class="fa fa-arrow-left" aria-hidden="true"></i>  extend ...';
+		$("slide_wrapper").width(0);
+		$("RadDeg").width(0);
+		$("advanced_others").width(0);
+		$("calculator_wrapper").width(315);
+		$("Extend").html = '<i class="fa fa-arrow-left" aria-hidden="true"></i>  extend ...';
 	}
 
 	isClickButtonExtend = !isClickButtonExtend;
