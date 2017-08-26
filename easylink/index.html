@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EasyLink - IoT Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  #platform {
+    background-color: #00ABF6
+  }
+
+/*  img {
+    width: 100%;
+  }*/
+
+
+    
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+  <div id="Contactpoint">
+
+     <div id="Contactpoint-left">
+       <a href="">INFO@EASYLINK.COM</a>
+        <a href="">(+84.24) 37722989</a>
+     </div> 
+
+    <div id="Contactpoint-right">
+       <a href="">Facebook</a>
+       <a href="">Instagram</a>
+     </div> 
+  </div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Platform</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Applications</a></li>
+        <li><a href="#">Integration
+            <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul></a>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Tiếng Việt</a></li>
+        <li><a href="#">English</a></li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+  <div id="platform">
+    
+    <h1>PLATFORM</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="http://easylink.vn/wp-content/uploads/2017/08/home-pic-768x463-1.png" class="img-responsive">
+      </div>
+      <div class="col-sm-6">
+          <h2>RELEASE CUSTOMERS FROM DIFFICULTY</h2>
+          <p>EasyLink, an advanced IoT Platform, supports customers to store and manage enormous data from devices</p>
+      </div>
+
+  </div>
+
+</div>
+
+
+</div>
+
+<div class="container-fluid">
+  <h1>FEATURES</h1>
+  <div class="row">
+    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <h4>Quản Lí Thiết Bị</h4>
+                        <p>Theo dõi và tương tác với thiết bị từ xa, từ bất kì địa điểm nào. Kiểm tra trạng thái, thay đổi cấu hình, xem dữ liệu nhận được từ thiết bị và chạy lệnh điều khiển thiết bị.</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <h4>Quản Lý Tài Sản</h4>
+                        <p>Cho phép quản lý các loại tài sản liên quan tới hoạt động của thiết bị bao gồm tài sản vật lý, nhân lực và địa điểm.</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <h4>Tương Tác Thiết Bị</h4>
+                        <p>Tiếp nhận dữ liệu từ thiết bị đầu cuối hoặc thiết bị kết nối thông qua nhiều giao thức khác nhau: HTTP, MQTT, Socket, WebSocket, COAP.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <h4>Luật xử lý</h4>
+                        <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+  </div>
+
+</div>
+
+<div class="container-fluid">
+
+  <h1>APPLICATION</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/bts-image-1.png" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>BTS Room Monitoring</h2>
+            <p>A complete solution to monitor environment, security and power supply in BTS rooms</p>
+          </div>
+          </a>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/dc-image-2.jpg" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>Data Center Monitoring</h2>
+            <p>A complete solution to monitor environment, security and power supply in Data Centers</p>
+          </div>
+          </a>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/4-2.png" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>Taxi Booking System</h2>
+            <p>Taxi driver management and driver monitoring solution that combines Facebook Chatbot </p>
+          </div>
+          </a>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+  <h1>INTEGRATION</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/computer-1.png" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>APPLICATION INTEGRATION</h2>
+            <p>Connect applications to the API system</p>
+          </div>
+          </a>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/wifi-router-300x300-1.png" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>DEVICE INTEGRATION</h2>
+            <p>Register, send / receive data via EasyLink</p>
+          </div>
+          </a>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+      <div class="thumbnail">
+          <a href="/w3images/lights.jpg">
+          <img src="http://easylink.vn/wp-content/uploads/2017/08/setting-300x300-1.png" alt="Lights" style="width:75%">
+          <div class="caption">
+            <h2>ADMIN PORTAL</h2>
+            <p>Simple administration friendly display</p>
+          </div>
+          </a>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p>Copyright 2017 © Easy Link</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Quote Machine - Free Code Camp Front-End assignment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+
+		function test(json){
+		  console.log(json);
+		}
+
+		$.ajax({
+		  url: "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=652fed4e823700294c819a1df737b159&?lat=21.03&lon=105.85&callback=test",
+		  dataType: "jsonp",
+		  jsonpCallback: "test"
+		});
+
+
+		// // var url = "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
+		// function logResults(json) {
+		// 	console.log(json.quoteText);
+		// }
+
+		// $.getJSON('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?', logResults);
+              
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

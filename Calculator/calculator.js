@@ -23,8 +23,8 @@ function myFunctionExt() {
 	if (isClickButtonExtend == true) {
 
 		$("#slide_wrapper").width(235);
-		$("#RadDeg").width(235p);
-		$("#advanced_others").width(235p);
+		$("#RadDeg").width(235);
+		$("#advanced_others").width(235);
 		$("#calculator_wrapper").width(555);
 		$("#Extend").html = 'collapse ... <i class="fa fa-arrow-right" aria-hidden="true"></i> ';
 
