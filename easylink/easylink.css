@@ -1,0 +1,144 @@
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+/*    
+    #contact-point {
+      background-color: #00abf6;
+      line-height: 35px;
+      clear: both;
+      top: 35px;
+    }*/
+
+/*    .left {
+      float: left;
+      padding: 5px;
+      padding-left: 100px;
+    }
+
+   .right {
+      float: right;
+      padding-right: 100px;
+    }*/
+
+    .navbar {
+      /*margin-bottom: 0;*/
+      /*border-radius: 0;*/
+      background-color: white;
+      border-color: rgba(0,0,0,0);
+      background-color: rgba(255,255,255,0.9);
+      color: black;
+      /*position: fixed;*/
+      /*top: 35px;*/
+      /*z-index: 1;*/
+      /*line-height: 35px;*/
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+/*  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }*/
+
+  img.img-features {
+    /*max-height: 200px;*/
+    /*border-radius: 10%;*/
+    width: 80%;
+    /*height: 100vh;*/
+    
+  }
+
+
+  #logo {
+    border-radius: 0;
+    /*width: 200px;*/
+    height: 72px;
+    /*object-fit: cover;*/
+  }
+
+  .thumbnail {
+    background:rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    width: 90%;
+    margin: auto;
+
+  }
+
+
+
+  #platform, #applications {
+    background-color: #7EAEC6;
+    color: white;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: 50% 50%;
+
+  }
+
+
+  #features {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  h3:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: rgba(0,0,0,0.2);
+    width: 15%;
+  }
+  h3:before {
+      display: inline-block;
+      margin: 0 20px 8px 0;
+      height: 1px;
+      content: " ";
+      text-shadow: none;
+      background-color: rgba(0,0,0,0.2);
+      width: 15%;
+  }
+
+
+
+  #applications .thumbnail .caption {
+    color: white;
+  }
+
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  body { padding-top: 70px; }
+
+
+    
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:white; color:black;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+

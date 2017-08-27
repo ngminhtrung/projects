@@ -1,7 +1,9 @@
 
 
 $(document).ready(function () {
-    var itemsMainDiv = ('.MultiCarousel');
+
+
+    var itemsMainDiv = ('.MultiCarousel'); // 
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
 

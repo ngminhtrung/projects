@@ -8,145 +8,52 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/220b50267c.js"></script>
+ 
+  <link rel="stylesheet" href="easylink.css">
 
-  <script type="text/javascript" src="javascript.js"></script>
 
 
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    
-    #contact-point {
-      background-color: #00abf6;
-      line-height: 35px;
-      clear: both;
-    }
-
-    .left {
-      float: left;
-      padding: 5px;
-      /*padding-left: 100px;*/
-    }
-
-   .right {
-      float: right;
-      /*padding-right: 100px;*/
-    }
-
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: white;
-      border-color: rgba(0,0,0,0);
-      background-color: rgba(255,255,255,0.7);
-      /*position: fixed;*/
-      /*top: 35px;*/
-      /*right: 0;*//*
-      z-index: 1;
-      line-height: */
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-/*  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }*/
-
-  img {
-    /*max-height: 200px;*/
-    border-radius: 10%;
-    /*width: 80%;*/
-    /*height: 100vh;*/
-    
-  }
-
-  .cover {
-    object-fit: cover;
-    width: 200px;
-    object-position: 50% 50%;
-  }
-
-  #logo {
-    border-radius: 0;
-    /*width: 200px;*/
-    height: 72px;
-    /*object-fit: cover;*/
-  }
-
-  .thumbnail {
-    background:rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    width: 90%;
-    margin: auto;
-
-  }
-
-  #platform, #applications {
-    background-color: #7EAEC6;
-    color: white;
-    background-image: url("background.png");
-    background-size: cover;
-    background-position: 50% 50%;
-
-  }
-
-  #features {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-
-  h2 {
-    text-align: center;
-  }
-
-  #applications .thumbnail .caption {
-    color: white;
-  }
-
-  a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-  }
-
-  body {
-    padding-top: 70px;
-  }
-
-
-
-    
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
-
-
 
   </style>
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">EasyLink</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Platform</a></li>
+        <li ><a href="#">Features</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Applications<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">BTS Roomm Monitoring</a></li>
+            <li><a href="#">Data Center Monitoring</a></li>
+            <li><a href="#">Taxi Booking System</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Integration</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="btn navbar-btn">Tiếng Việt</button>
+      <button class="btn navbar-btn">English</button>
+    </div>
+  </div>
+</nav>
 
-<div class="container-fluid">
 
-    <div class="row" id="contact-point">
+<div class="content container-fluid">
+
+<!--     <div class="row" id="contact-point">
 
         <a href=""><span style="color: white; padding: 5px;"><i class="fa fa-envelope-o" aria-hidden="true"></i> INFO@EASYLINK.COM</span></a>
         <a href=""><span style="color: white; padding: 5px;">|</span></a>
@@ -155,47 +62,16 @@
         <a href=""><span style="color: white; padding: 5px;"><i class=" fa fa-instagram" aria-hidden="true"></i></span></a>
         <a href=""><span style="color: white; padding: 5px;"><i class=" fa fa-twitter" aria-hidden="true"></i></span></a>
 
-    </div>
-
-    <div class="row" id="navigationbar">
-        <nav class="navbar navbar-fixed-top">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive" id="logo" src="http://easylink.vn/wp-content/uploads/2017/08/EasyLink_logo-4.png"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Platform</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Applications</a></li>
-                <li><a href="#">Integration
-            <ul class="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-            </ul></a>
-            </li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Tiếng Việt</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-            </div>
-        </nav>
-    </div>
+    </div> -->
 
     <div class="row" id="platform">
       
-      <br>
-      <h2><span>PLATFORM</span></h2><br>
+      <h3><span>PLATFORM</span></h3><br>
       <div class="row">
         <div class="col-sm-5">
           <img src="http://easylink.vn/wp-content/uploads/2017/08/home-pic-768x463-1.png" class="img-responsive" style="width: 85%; margin: auto">
         </div>
-        <div class="col-sm-7" style="padding: 5%">
+        <div class="col-sm-7">
             <h4>RELEASE CUSTOMERS FROM DIFFICULTY</h4>
             <p>EasyLink, an advanced IoT Platform, supports customers to store and manage enormous data from devices</p>
         </div>
@@ -205,46 +81,101 @@
 
 
     <div class="row" id="features">
-      <h2><span>FEATURES</span></h2><br>
+      <h3><span>FEATURES</span></h3><br>
       <div class="row">
         <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
                 <div class="MultiCarousel-inner">
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <h4>Quản Lí Thiết Bị</h4>
+                            <img class="img-features" src="photos/feature-quan-ly-thiet-bi.png"  alt="Device Management">
+                            <h4>Device Management</h4>
                             <p>Theo dõi và tương tác với thiết bị từ xa, từ bất kì địa điểm nào. Kiểm tra trạng thái, thay đổi cấu hình, xem dữ liệu nhận được từ thiết bị và chạy lệnh điều khiển thiết bị.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <h4>Quản Lý Tài Sản</h4>
+                            <img class="img-features" src="photos/feature-quan-ly-tai-san.png"  alt="Asset Management">
+                            <h4>Asset Management</h4>
                             <p>Cho phép quản lý các loại tài sản liên quan tới hoạt động của thiết bị bao gồm tài sản vật lý, nhân lực và địa điểm.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <h4>Tương Tác Thiết Bị</h4>
+                            <img class="img-features" src="photos/feature-tuong-tac-thiet-bi.png"  alt="Device Interacting">
+                            <h4>Device Interacting</h4>
                             <p>Tiếp nhận dữ liệu từ thiết bị đầu cuối hoặc thiết bị kết nối thông qua nhiều giao thức khác nhau: HTTP, MQTT, Socket, WebSocket, COAP.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <h4>Luật xử lý</h4>
+                            <img class="img-features" src="photos/feature-luat-xu-ly.png"  alt="Processing Rule">
+                            <h4>Processing Rule</h4>
                             <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
                         </div>
                     </div>
+
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
+                            <img class="img-features" src="photos/feature-hang-rao-dia-ly.png"  alt="Geography Barrier">
+                            <h4>Geography Barrier</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
                         </div>
                     </div>
+
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-canh-bao-tuy-bien.png"  alt="Custom Warning">
+                            <h4>Custom Warning</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+                                        <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-xu-ly-theo-lo.png"  alt="Batch Processing">
+                            <h4>Batch Processing</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+
+                                        <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-sdk.png"  alt="SDK">
+                            <h4>SDK</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+
+                                        <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-quan-tri-nguoi-dung.png"  alt="User Management">
+                            <h4>User Management</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+
+                                        <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-rest-api.png"  alt="Rest API">
+                            <h4>Rest API</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+
+                     <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-tai-cau-truc-du-lieu.png"  alt="Data Restructuring">
+                            <h4>Data Restructuring</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+                     <div class="item">
+                        <div class="pad15">
+                            <img class="img-features" src="photos/feature-luu-tru-du-lieu-lon.png"  alt="Data Restructuring">
+                            <h4>Data Restructuring</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+
                 </div>
                 <button class="btn btn-primary leftLst"><</button>
                 <button class="btn btn-primary rightLst">></button>
@@ -256,13 +187,13 @@
 
     <div class="row" id="applications">
 
-      <h2>APPLICATION</h2><br>
-      <div class="row">
+      <h3>APPLICATION</h3><br>
+      <!-- <div class="row"> -->
         <div class="col-sm-4">
           
           <div class="thumbnail">
               <a href="">
-              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/bts-image-1.png" alt="Lights" style="height: 200px">
+              <img class="cover" src="photos/application-1.png" alt="Lights">
               <div class="caption">
                 <span><h4>BTS Room Monitoring</h4></span>
                 <p><span>A complete solution to monitor environment, security and power supply in BTS rooms</span></p>
@@ -274,7 +205,7 @@
         <div class="col-sm-4">
           <div class="thumbnail">
               <a href="">
-              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/dc-image-2.jpg" alt="Lights" style="height: 200px">
+              <img class="cover" src="photos/application-2.jpg"  alt="Lights">
               <div class="caption">
                 <h4>Data Center Monitoring</h4>
                 <p>A complete solution to monitor environment, security and power supply in Data Centers</p>
@@ -286,7 +217,7 @@
         <div class="col-sm-4">
           <div class="thumbnail">
               <a href="">
-              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/4-2.png" alt="Lights" style="height: 200px">
+              <img class="cover" src="photos/application-3-cropped.png" alt="Lights">
               <div class="caption">
                 <h4>Taxi Booking System</h4>
                 <p>Taxi driver management and driver monitoring solution that combines Facebook Chatbot </p>
@@ -294,13 +225,13 @@
               </a>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
 
     <div class="row" id="integration">
 
-      <h2>INTEGRATION</h2><br>
-      <div class="row">
+      <h3>INTEGRATION</h3><br>
+      <!-- <div class="row"> -->
         <div class="col-sm-4">
           <div class="thumbnail">
               <a href="">
@@ -335,7 +266,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
 </div>
 
@@ -351,5 +282,36 @@
   <p>Copyright 2017 © Easy Link</p>
 </footer>
 
+ <script type="text/javascript" src="javascript.js"></script>
+
 </body>
 </html>
+
+         <!--     <div class="pad15">
+                            
+                            <h4>Quản Lí Thiết Bị</h4>
+                            <p>Theo dõi và tương tác với thiết bị từ xa, từ bất kì địa điểm nào. Kiểm tra trạng thái, thay đổi cấu hình, xem dữ liệu nhận được từ thiết bị và chạy lệnh điều khiển thiết bị.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            
+                            <h4>Quản Lý Tài Sản</h4>
+                            <p>Cho phép quản lý các loại tài sản liên quan tới hoạt động của thiết bị bao gồm tài sản vật lý, nhân lực và địa điểm.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            
+                            <h4>Tương Tác Thiết Bị</h4>
+                            <p>Tiếp nhận dữ liệu từ thiết bị đầu cuối hoặc thiết bị kết nối thông qua nhiều giao thức khác nhau: HTTP, MQTT, Socket, WebSocket, COAP.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            
+                            <h4>Luật xử lý</h4>
+                            <p>Các luật xử lý cho phép tự động kích hoạt hành động dựa trên giá trị của dữ liệu thu thập.</p>
+                        </div>
+                    </div>
+ -->
