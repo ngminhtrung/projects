@@ -16,21 +16,20 @@
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     
     #contact-point {
-
-      /*background-color: #00ABF6;*/
-      background-color: white;
-      color: red;
+      background-color: #00abf6;
+      line-height: 35px;
       clear: both;
     }
 
-    #contactpoint-left {
+    .left {
       float: left;
-      padding-left: 100px;
+      padding: 5px;
+      /*padding-left: 100px;*/
     }
 
-    #contactpoint-right {
+   .right {
       float: right;
-      padding-right: 100px;
+      /*padding-right: 100px;*/
     }
 
     .navbar {
@@ -38,6 +37,12 @@
       border-radius: 0;
       background-color: white;
       border-color: rgba(0,0,0,0);
+      background-color: rgba(255,255,255,0.7);
+      /*position: fixed;*/
+      /*top: 35px;*/
+      /*right: 0;*//*
+      z-index: 1;
+      line-height: */
     }
     
     /* Add a gray background color and some padding to the footer */
@@ -62,8 +67,22 @@
   img {
     /*max-height: 200px;*/
     border-radius: 10%;
-    width: 80%;
+    /*width: 80%;*/
+    /*height: 100vh;*/
+    
+  }
+
+  .cover {
     object-fit: cover;
+    width: 200px;
+    object-position: 50% 50%;
+  }
+
+  #logo {
+    border-radius: 0;
+    /*width: 200px;*/
+    height: 72px;
+    /*object-fit: cover;*/
   }
 
   .thumbnail {
@@ -71,7 +90,6 @@
     border-color: rgba(0,0,0,0);
     width: 90%;
     margin: auto;
-    
 
   }
 
@@ -102,6 +120,10 @@
     text-decoration: none;
   }
 
+  body {
+    padding-top: 70px;
+  }
+
 
 
     
@@ -126,27 +148,24 @@
 
     <div class="row" id="contact-point">
 
-       <div id="contactpoint-left">
-         <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i><span>INFO@EASYLINK.COM</span></a>
-        <a href=""><i class="fa fa-phone" aria-hidden="true"></i>(84.24) 37722989</a>
-       </div> 
+        <a href=""><span style="color: white; padding: 5px;"><i class="fa fa-envelope-o" aria-hidden="true"></i> INFO@EASYLINK.COM</span></a>
+        <a href=""><span style="color: white; padding: 5px;">|</span></a>
+        <a href=""><span style="color: white; padding: 5px;"><i class="fa fa-phone" aria-hidden="true"></i> (&#43;84.24) 37722989 </span</a>
+        <a href=""><span style="color: white; padding: 5px;"><i class=" fa fa-facebook" aria-hidden="true"></i></span></a>
+        <a href=""><span style="color: white; padding: 5px;"><i class=" fa fa-instagram" aria-hidden="true"></i></span></a>
+        <a href=""><span style="color: white; padding: 5px;"><i class=" fa fa-twitter" aria-hidden="true"></i></span></a>
 
-      <div id="contactpoint-right">
-         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-         <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-         <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-       </div> 
     </div>
 
     <div class="row" id="navigationbar">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-fixed-top">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#"><img id="logo" src="http://easylink.vn/wp-content/uploads/2017/08/EasyLink_logo-4.png" style="height: 140%"></a>
+            <a class="navbar-brand" href="#"><img class="img-responsive" id="logo" src="http://easylink.vn/wp-content/uploads/2017/08/EasyLink_logo-4.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -170,6 +189,7 @@
 
     <div class="row" id="platform">
       
+      <br>
       <h2><span>PLATFORM</span></h2><br>
       <div class="row">
         <div class="col-sm-5">
@@ -242,7 +262,7 @@
           
           <div class="thumbnail">
               <a href="">
-              <img src="http://easylink.vn/wp-content/uploads/2017/08/bts-image-1.png" alt="Lights">
+              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/bts-image-1.png" alt="Lights" style="height: 200px">
               <div class="caption">
                 <span><h4>BTS Room Monitoring</h4></span>
                 <p><span>A complete solution to monitor environment, security and power supply in BTS rooms</span></p>
@@ -254,7 +274,7 @@
         <div class="col-sm-4">
           <div class="thumbnail">
               <a href="">
-              <img src="http://easylink.vn/wp-content/uploads/2017/08/dc-image-2.jpg" alt="Lights">
+              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/dc-image-2.jpg" alt="Lights" style="height: 200px">
               <div class="caption">
                 <h4>Data Center Monitoring</h4>
                 <p>A complete solution to monitor environment, security and power supply in Data Centers</p>
@@ -266,7 +286,7 @@
         <div class="col-sm-4">
           <div class="thumbnail">
               <a href="">
-              <img src="http://easylink.vn/wp-content/uploads/2017/08/4-2.png" alt="Lights">
+              <img class="cover" src="http://easylink.vn/wp-content/uploads/2017/08/4-2.png" alt="Lights" style="height: 200px">
               <div class="caption">
                 <h4>Taxi Booking System</h4>
                 <p>Taxi driver management and driver monitoring solution that combines Facebook Chatbot </p>
