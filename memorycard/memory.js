@@ -1,12 +1,16 @@
 var totalFlipOn = 0;
 
-let imageNumber = 12; 
+var imageNumber = 12; 
 
-let imageIndexArray = createArray(imageNumber);
+var imageIndexArray = createArray(imageNumber);
 
-let imagesArray = createImageArray(shuffle(imageIndexArray));
+var imagesArray = createImageArray(shuffle(imageIndexArray));
+
+var currentImgIdFlippedOn = [];
+
 
 imageIndexArray = imageIndexArray.sort(function(a,b) {return a-b});
+
 
 function createArray(Number) {
 
@@ -33,14 +37,6 @@ function loadData(Num) {
 	}
 
 }
-
-// function flipImageOn() {
-
-// }
-
-// function flipImageOff() {
-
-// }
 
 function shuffle(array) {
     var currentIndex = array.length
