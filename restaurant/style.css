@@ -1,0 +1,107 @@
+	.navbar {
+			opacity: 0.9;
+			background-color: #7c5c2b;
+
+		}
+
+		#quick-info, #booking, #menu-header, #contact {
+			background-color: #7c5c2b;
+		}
+
+
+
+		#contact .row .col-sm-4 h4 {
+			color: white;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		#contact .row .col-sm-4 p {
+			color: white;
+			padding-left: 10%;
+		}
+
+		#restaurant-apperance {
+			padding: 5%;
+		}
+
+		#description {
+			padding: 5%;
+			text-align: center;
+		}
+
+		#description img {
+			width: 30%;
+			margin: auto;
+		}
+
+		#description h4 {
+			color: #7c5c2b;
+			padding-top: 10px;
+		}
+
+		.btn {
+			border-color: #7c5c2b;
+		}
+
+		.btn:hover {
+			background-color: #7c5c2b;
+			color: white;
+		}
+
+		footer {
+			background-color: #aa894b;
+			color: white;
+			text-align: center;
+			line-height: 5;
+		}
+
+		#quick-info {
+			color: white;
+		}
+
+		#menu-general  img {
+			transition: all 0.3s;
+			width: 100%;
+			opacity: 0.8;
+			filter: grayscale(10%);
+		}
+
+		#menu-general .row .col-sm-4 {
+			padding: 2.5%;
+
+		}
+
+		#menu-general img:hover {
+			transform: scale(1.05);
+			opacity: 1.0;
+			filter: grayscale(0%);
+		}
+
+		#menu-header {
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+
+		#quick-info p {
+			line-height: 3;
+			margin: 0;
+		}
+
+		#myCarousel {
+			width: 100%;
+			padding: 0;
+		}
+
+
+		.intro-page img {
+			width: 75%;
+			margin: auto;
+		}
+
+		.intro-page {
+			top: 75px;
+		}
