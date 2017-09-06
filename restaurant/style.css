@@ -1,14 +1,4 @@
 
-
-#background {
-	background-image: url("photos/background.jpg");
-	 background-position: left top;
-	 background-size: cover;
-	 background-repeat: no-repeat;
-	opacity: 1;
-	z-index: 2;
-}
-
 /*Style for Navigation Bar*/
 
 .navbar {
@@ -20,10 +10,22 @@
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: white !important;
+	/*font-family: 'Tinos', serif;*/
+
 
 }
 .navbar-default .navbar-nav>li>a {
 	color: white !important;
+	font-family: 'Tinos', serif;
+	font-size: 18px;
+
+}
+
+.navbar-nav .dropdown .dropdown-menu >li>a {
+
+	font-family: 'Tinos', serif;
+	font-size: 18px;
+
 }
 /*
 .nav>li>a:focus, .nav>li>a:hover {
@@ -61,6 +63,23 @@ background-color: #eee;
 .dropdown-menu{
 
 }
+
+#description h3 {
+
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+
+}
+
+
+#description h4 {
+
+	font-family: 'Andika', sans-serif;
+	font-size: 24px;
+
+}
+
+
 
 
 /*Style for CONTACT part*/
@@ -217,4 +236,10 @@ p {
 
 i {
 	color: white;
+}
+
+#contact p {
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 17px;
+
 }
