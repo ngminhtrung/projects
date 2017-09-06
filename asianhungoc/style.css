@@ -1,0 +1,210 @@
+
+
+#background {
+	background-image: url("photos/background.jpg");
+	 background-position: left top;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	opacity: 1;
+	z-index: 2;
+}
+
+/*Style for Navigation Bar*/
+
+.navbar {
+	opacity: 0.9;
+	background-color: #7c5c2b;
+	z-index: 1;
+
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: white !important;
+
+}
+.navbar-default .navbar-nav>li>a {
+	color: white !important;
+}
+/*
+.nav>li>a:focus, .nav>li>a:hover {
+text-decoration: none;
+background-color: #eee;
+}*/
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+
+/*Style for INDEX.html*/
+
+
+#quick-info, #booking, #menu-header, #copyleft {
+	background-color: #AA894B;
+}
+
+.carousel .carousel-inner
+{
+	overflow:visible !important;
+	z-index: -1;
+
+}
+
+.dropdown-menu{
+
+}
+
+
+/*Style for CONTACT part*/
+
+#contact {
+	background-color: #7c5c2b;
+}
+
+#contact .row .col-sm-4 h4 {
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact .row .col-sm-4 p {
+	color: white;
+	padding-left: 10%;
+}
+
+#restaurant-apperance {
+	padding: 5%;
+}
+
+#description {
+	padding: 5%;
+	text-align: center;
+}
+
+#description img {
+	width: 30%;
+	margin: auto;
+}
+
+#description h4 {
+	color: #7c5c2b;
+	padding-top: 10px;
+}
+
+.btn {
+	border-color: #7c5c2b;
+}
+
+.btn:hover {
+	background-color: #7c5c2b;
+	color: white;
+}
+
+footer {
+	background-color: #aa894b;
+	color: white;
+	text-align: center;
+	line-height: 5;
+}
+
+#quick-info {
+	color: white;
+}
+
+#menu-general  img {
+	transition: all 0.3s;
+	width: 100%;
+	opacity: 0.8;
+	filter: grayscale(10%);
+}
+
+#menu-general .row .col-sm-4 {
+	padding: 2.5%;
+
+}
+
+#menu-general img:hover {
+	transform: scale(1.05);
+	opacity: 1.0;
+	filter: grayscale(0%);
+}
+
+#menu-header {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+#quick-info p {
+	line-height: 3;
+	margin: 0;
+}
+
+#myCarousel {
+	width: 100%;
+	padding: 0;
+}
+
+
+.divide-menu {
+	padding-bottom: 5px;
+	border-style: solid;
+	border-width: 0 0 1px 0px;
+	border-color: #7c5c2b;
+	text-align: center;
+}
+
+/*Style for INTRODUCTION.html*/
+
+.intro-page img {
+	width: 75%;
+	margin: auto;
+}
+
+.intro-page {
+	padding-top: 75px;
+	width: 75%;
+	color: #7c5c2b;
+}
+
+
+/*Style for MENU.html*/
+
+.equal {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+}
+
+.menu-tonghop {
+	width: 80%;
+	margin: auto;
+	padding: 75px;
+	text-align: center;
+}
+
+
+/*Style for detail.html*/
+
+.menu-detail {
+
+	width: 80%;
+	margin: auto;
+	padding-top: 75px;
+	text-align: center;
+}
+
+.menu-detail img {
+	width: 75	%;
+}
+
