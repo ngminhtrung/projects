@@ -265,14 +265,14 @@ function setDetailData() {
 
 	menuDetail.appendChild(nameDetail);
 	
-	priceDetail = document.createElement('H2');
+	priceDetail = document.createElement('H3');
 	priceText = document.createTextNode(currentDish.price);
 	priceDetail.appendChild(priceText);
 
 	menuDetail.appendChild(priceDetail);
 	
 
-	ingredientDetail = document.createElement('H2');
+	ingredientDetail = document.createElement('H3');
 	ingreText = document.createTextNode(currentDish.ingredient);
 	ingredientDetail.appendChild(ingreText);
 
