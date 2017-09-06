@@ -102,6 +102,7 @@ background-color: #eee;
 
 .btn {
 	border-color: #7c5c2b;
+	color: #7c5c2b;
 }
 
 .btn:hover {
@@ -208,3 +209,12 @@ footer {
 	width: 75	%;
 }
 
+p {
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 21px;
+
+}
+
+i {
+	color: white;
+}
