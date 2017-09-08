@@ -138,8 +138,12 @@
 
 				document.getElementsByClassName("firstName")[0].innerText = "Mr. " + upCaseFirstCharacter(formData["firstName"]);
 				document.getElementById("info").style.backgroundColor ="#DFF0D8";
+			} else {
+
+				document.getElementsByClassName("firstName")[0].innerText = upCaseFirstCharacter(formData["firstName"]);
+				document.getElementById("info").style.backgroundColor ="#DFF0D8";
 			}
-			
+
 			document.getElementsByClassName("firstName")[1].innerText = upCaseFirstCharacter(formData["lastName"]) + " " + upCaseFirstCharacter(formData["firstName"]);
 			
 			if (formData["gender"] === undefined) 
