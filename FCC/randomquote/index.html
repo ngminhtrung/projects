@@ -20,9 +20,7 @@
 		// });
 
 		// var url = "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
-		function logResults(json) {
-			console.log(json.quoteText);
-		}
+
 
 		// $.ajax({
 		//   url: "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&_jsonp=logResults",
@@ -31,7 +29,7 @@
 		// });
 
 
-		$.getJSON('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?', logResults);
+		
 
 		// Quotes about learning from goodreads -- http://www.goodreads.com/quotes/tag/learning
 
@@ -74,7 +72,18 @@ $(document).ready(function(){
   // Now to start autoTyping just call the autoType function with the 
   // class of outer div
   // The second paramter is the speed between each letter is typed.   
-  autoType(".type-js",50);
+
+  $.getJSON('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?', logResults);
+
+  function logResults(json) {
+  	// $(".text-js").text(json.quoteText);
+  	console.log(json.quoteText);
+  	$(".text-js").text("Hello!");
+  }
+
+
+
+  // autoType(".type-js",50);
 });
 
 
