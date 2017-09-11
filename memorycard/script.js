@@ -19,12 +19,31 @@ function createImageArray(imageNumber) {
 
 }
 
-var card = $(".card");
+var photoDiv = document.getElementById("photos");
+
 for(var i=0; i<pics.length; i++){
-	$(card[i]).children(":nth-child(1)").attr("src", pics[i]._src);
-	$(card[i]).children(":nth-child(1)").attr("alt", pics[i]._alt);
+	
+	var cardEle = document.createElement("div");
+	var frontEle = document.createElement("img");
+	var backEle = document.createElement("img");
+
+	cardEle.className = "card";
+	frontEle.src = pics[i]._src;
+	frontEle.className = "front";
+	frontEle.alt = pics[i]._alt;
+	backEle.src = "photos/photo_front.png";
+	backEle.className = "back";
+
+	cardEle.appendChild(frontEle);
+	cardEle.appendChild(backEle);
+	photoDiv.appendChild(cardEle);
+
 }
-card.children(":nth-child(1)").toggleClass("flipped");
+
+var card = $(".card");
+
+card.children(":nth-child(1)").addClass("flipped");
+
 card.click(function(){
 	$(this).children(":nth-child(1)").removeClass("flipped");
 	$(this).children(":nth-child(2)").addClass("flipped");
